@@ -33,7 +33,12 @@ namespace SingleViewWithMultipleModel.Controllers
                 new Teacher { Id = 5, Name = "Anees",Qualification = "BBA",Salary = 100000 }
 
             };
-            return View(students);
+            SchoolViewModelcs obj = new SchoolViewModelcs()
+            {
+                Mystudents = students,
+                Myteachers = teachers
+            };
+            return View(obj);
         }
 
         public IActionResult Privacy()
