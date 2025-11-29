@@ -17,14 +17,14 @@ namespace SingleViewWithMultipleModel.Controllers
         {
             List<Student> students = new List<Student>
             {
-                new Student { Id = 1, Name = "John Doe",Gender"Male", Standard=10 },
-                new Student { Id = 2, Name = "Noor",Gender"Female", Standard=10 },
-                new Student { Id = 3, Name = "John Doe",Gender"Male", Standard=10 },
-                new Student { Id = 4, Name = "John Doe",Gender"Male", Standard=10 },
-                new Student { Id = 5, Name = "John Doe",Gender"Male", Standard=10 }
+                new Student { Id = 1, Name = "John Doe",Gender="Male", Standard=10 },
+                new Student { Id = 2, Name = "Noor",Gender="Female", Standard=4 },
+                new Student { Id = 3, Name = "Izaz",Gender="Male", Standard=9 },
+                new Student { Id = 4, Name = "Hakim",Gender="Male", Standard=11 },
+                new Student { Id = 5, Name = "Anees",Gender="Male", Standard=12 }
       
             };
-            return View();
+            return View(students);
         }
 
         public IActionResult Privacy()
