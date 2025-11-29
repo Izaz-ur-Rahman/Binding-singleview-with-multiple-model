@@ -24,6 +24,15 @@ namespace SingleViewWithMultipleModel.Controllers
                 new Student { Id = 5, Name = "Anees",Gender="Male", Standard=12 }
       
             };
+            List<Teacher> teachers = new List<Teacher>
+            {
+                new Teacher { Id = 1, Name = "John Doe",Qualification = "M.A Islamyat",Salary = 100000 },
+                new Teacher { Id = 2, Name = "Noor",Qualification = "ACCA",Salary = 100000},
+                new Teacher { Id = 3, Name = "Izaz",Qualification = "MSC",Salary = 100000 },
+                new Teacher { Id = 4, Name = "Hakim",Qualification = "CS",Salary = 100000 },
+                new Teacher { Id = 5, Name = "Anees",Qualification = "BBA",Salary = 100000 }
+
+            };
             return View(students);
         }
 
