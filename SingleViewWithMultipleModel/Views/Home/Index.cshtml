@@ -6,6 +6,10 @@
 
 <h2>Students List</h2>
 <div class="container">
+    @if(Model.Mystudents.Any())
+    {
+        
+    
     <table class="table table-striped">
         <thead>
             <tr>
@@ -27,7 +31,12 @@
             }
         </tbody> 
         
-    </table>
+        </table>
+    }
+    else
+    {
+        <h2>No Studends Found..</h2>
+    }
 </div>
 
 <h2>Teacher List</h2>
@@ -59,6 +68,6 @@
     }
     else
     {
-        <h2>No Student Found..</h2>
+        <h2>No Teachers Found..</h2>
     }
 </div>
