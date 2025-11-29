@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SingleViewWithMultipleModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19c8eba363e9c03958c1c58a892b0d5f5b4ffdb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efe6fc34d0acb9db5d975ac52d21de3a15dd4639")]
 [assembly: System.Reflection.AssemblyProductAttribute("SingleViewWithMultipleModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SingleViewWithMultipleModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SingleViewWithMultipleModel.Models.Student>
+﻿@* @model IEnumerable<SingleViewWithMultipleModel.Models.Student> *@
+    @model SingleViewWithMultipleModel.Models.SchoolViewModelcs;
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -15,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var student in Model)
+            @foreach (var student in Model.Mystudents)
             {
                 <tr>
                     <td>@student.Id</td>
@@ -26,5 +27,31 @@
             }
         </tbody> 
         
+    </table>
+</div>
+
+<h2>Teacher List</h2>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Qualification</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in Model.Myteachers)
+            {
+                <tr>
+                    <td>@teacher.Id</td>
+                    <td>@teacher.Name</td>
+                    <td>@teacher.Qualification</td>
+                    <td>@teacher.Salary</td>
+                </tr>
+            }
+        </tbody>
+
     </table>
 </div>
