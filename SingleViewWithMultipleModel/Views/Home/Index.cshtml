@@ -32,6 +32,8 @@
 
 <h2>Teacher List</h2>
 <div class="container">
+    @if(Model.Myteachers.Any())
+    {
     <table class="table table-striped">
         <thead>
             <tr>
@@ -53,5 +55,10 @@
             }
         </tbody>
 
-    </table>
+        </table>
+    }
+    else
+    {
+        <h2>No Student Found..</h2>
+    }
 </div>
