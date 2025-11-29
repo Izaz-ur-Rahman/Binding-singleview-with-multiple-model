@@ -15,6 +15,15 @@ namespace SingleViewWithMultipleModel.Controllers
 
         public IActionResult Index()
         {
+            List<Student> students = new List<Student>
+            {
+                new Student { Id = 1, Name = "John Doe",Gender"Male", Standard=10 },
+                new Student { Id = 2, Name = "Noor",Gender"Female", Standard=10 },
+                new Student { Id = 3, Name = "John Doe",Gender"Male", Standard=10 },
+                new Student { Id = 4, Name = "John Doe",Gender"Male", Standard=10 },
+                new Student { Id = 5, Name = "John Doe",Gender"Male", Standard=10 }
+      
+            };
             return View();
         }
 
